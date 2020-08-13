@@ -1,0 +1,7 @@
+domain: windows.k8s.io
+repo: github.com/jsturtevant/v2
+resources:
+- group: windows
+  kind: Hyperv
+  version: v1
+version: "2"

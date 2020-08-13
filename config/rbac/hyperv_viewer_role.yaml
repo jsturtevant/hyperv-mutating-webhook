@@ -1,0 +1,20 @@
+# permissions for end users to view hypervs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: hyperv-viewer-role
+rules:
+- apiGroups:
+  - windows.windows.k8s.io
+  resources:
+  - hypervs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - windows.windows.k8s.io
+  resources:
+  - hypervs/status
+  verbs:
+  - get
