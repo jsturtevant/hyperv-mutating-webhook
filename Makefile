@@ -78,6 +78,6 @@ CONTROLLER_GEN=$(shell which controller-gen)
 endif
 
 install-crtmanager:
-	kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v0.16.1/cert-manager.crds.yaml
+	kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v0.15.2/cert-manager.yaml
 
 
